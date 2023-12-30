@@ -15,4 +15,8 @@ export class TestimonialRepository {
       },
     })
   }
+
+  async getAll() {
+    return await prisma.testimonial.findMany()
+  }
 }
